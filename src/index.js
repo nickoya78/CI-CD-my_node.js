@@ -1,1 +1,5 @@
-const add = (a, b) => a + b;
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(3, 5)); // Example usage
