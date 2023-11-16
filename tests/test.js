@@ -1,5 +1,3 @@
-// tests/test.js  run
-
 const assert = require("assert");
 const { add } = require("../src/index");
 
