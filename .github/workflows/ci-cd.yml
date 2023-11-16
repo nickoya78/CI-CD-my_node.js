@@ -32,3 +32,29 @@ jobs:
         with:
           name: build-artifact
           path: build
+# Explanation:
+
+# name: Name of the GitHub Actions workflow.
+
+# on: Defines the trigger for the workflow. In this example, it triggers the workflow on any push to the main branch.
+
+# jobs: Contains a list of jobs to run for this workflow. The workflow has one job named "build."
+
+# runs-on: Specifies the operating system for the job. In this case, it's running on the latest version of Ubuntu.
+
+# steps: Contains a series of steps to execute within the job.
+
+# Checkout repository: Checks out the repository so that subsequent steps can access the source code.
+
+# Setup Node.js: Installs the specified version of Node.js to execute the project.
+
+# Install dependencies: Runs the command npm install to install project dependencies.
+
+# Run tests: Runs the project's tests using the command npm test.
+
+# Build application: Executes the command to build the application using npm run build.
+
+# Archive build artifact: Uses the actions/upload-artifact action to archive the build artifact. Adjust the path parameter to point to your actual build directory.
+
+# This YAML configuration defines a basic CI pipeline that triggers on a push to the main branch, checks out the code, sets up Node.js, installs dependencies, runs tests, builds the application, and archives the build artifact.
+
